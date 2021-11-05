@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@600&family=Irish+Grover&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+body{
+  background: rgb(33,15,52);
+  background: linear-gradient(176deg, rgba(33,15,52,1) 0%, rgba(202,194,235,1) 100%);
+}
+
+/*********************************************************************************************************************************/
+.contacto{
+  font-family: 'Alfa Slab One', cursive;
+  color: #fff;
+  text-decoration: none;
+}
+.contacto:hover{
+  color: lavenderblush;
+  font-size: 2rem; 
+}
+.curved {
+  position: relative;
+  background-image: url("../img/star.gif");
+  height: 50vh;
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+}
+.banner{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.imagenluna img{
+  max-width: 40em;
+  max-height : 40em;
+  position: absolute;
+  top: -40px;
+}
+@media(max-width:480px){
+  .imagenluna img{
+      display: none;
+  }
+}
+
+
+.titulobienvenidos {
+  color: #fff;
+  white-space: nowrap;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4em;
+  font-family: 'Press Start 2P', cursive;
+  letter-spacing: 0.1em;
+  margin-left: 10vw;
+  transition: 0.3s;
+  text-shadow: 1px 1px 0 grey, 1px 2px 0 grey, 1px 3px 0 grey, 1px 4px 0 grey,
+    1px 5px 0 grey, 1px 6px 0 grey, 1px 7px 0 grey, 1px 8px 0 grey,
+    5px 13px 15px black;
+}
+
+.titulobienvenidos:hover {
+  transition: 0.3s;
+  transform: scale(1.1)translate(-50%, -50%);
+  text-shadow: 1px -1px 0 grey, 1px -2px 0 grey, 1px -3px 0 grey,
+    1px -4px 0 grey, 1px -5px 0 grey, 1px -6px 0 grey, 1px -7px 0 grey,
+    1px -8px 0 grey, 5px -13px 15px black, 5px -13px 25px #808080;
+}
+@media(max-width:720px){
+  .titulobienvenidos{
+      font-size: 1.90em;
+      margin-left: 1.6em;
+     
+
+  }
+}
+
+/***************************************************************************************SOBREMI*********************************************************************************************/
+
+.sobremi{
+  font-family: 'Press Start 2P', cursive;
+  display: flex;
+  align-items: center;
+  color: cornsilk;
+ 
+  
+}
+
+/*******************ICONOS SKILLS**********************/
+
+.imgskills{
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.imgskills img{
+  size: 3em;
+} 
+
+@media(max-width:720px){
+  .imgskills{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1em;
+  }
+}
+
+
+.clip{
+  max-width: 5em;
+}
+
+.pixipng{
+  max-width: 7em;
+  margin: -1em;
+}
+
+
+
+/****************IMAGEN SOBRE MÍ*******************/
+
+.imgsobremi{
+  width: 16vw;
+  height: 32vh;
+  padding: 5px;
+}
+@media(max-width:720px){
+  .imgsobremi{
+     display:none;
+     
+
+  }
+}
+
+/************************TITULO SOBRE MI********************/
+
+.titulosobremi{
+  display: flex;
+  justify-content: space-around;
+  font-size: 5em;
+  color: cornsilk;
+  -webkit-text-stroke: 2px black;
+}
+
+@media(max-width:720px){
+  .titulosobremi{
+     font-size: 2em;
+     
+  }
+  }
+  
+  /************************SUBTITULO SOBRE MI********************/
+  
+  .subtitulosobremi{
+     font-size: 1em;
+     display: flex;
+     flex-direction: column;
+  }
+
+
+  @media(max-width:720px){
+    .subtitulosobremi{
+       font-size: 1em;
+       
+    }
+    }
+
+
+
+/****************************************************************************************CARTAS********************************************************************************************/
+.divtitulocartas{
+  display: flex;
+  justify-content: center;
+  padding: 3em;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.titulocartas{
+  font-size: 1.50em;
+  font-family: 'Press Start 2P', cursive;
+  color: cornsilk;
+  padding: 1em;
+}
+
+.textocartas{
+  font-family: 'Press Start 2P', cursive;
+  color: cornsilk;
+  font-size: 1em;
+}
+
+
+.cartas{
+  display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3em;
+
+}
+
+/*****************CARTA1 (CARTA PASEO)***********/
+.lomoCarta1{
+  content: url("../img/diamante1.png");
+}
+
+.cartaPaseo{
+  content: url("../img/cartapaseo.png");
+}
+
+.divCartaPaseo {
+  position: relative;
+  display: inline-block;
+ 
+}
+
+.divCartaPaseo .cartaPaseoText {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(142, 75, 180);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.divCartaPaseo .cartaPaseoText::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #6C3BC5 transparent transparent transparent;
+}
+
+.divCartaPaseo:hover .cartaPaseoText {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*****************CARTA2 (CARTA YOUTUBE)***********/
+.lomoCarta2{
+  content: url("../img/diamante1.png");
+}
+
+.cartaYouTube{
+  content: url("../img/cartayt.png");
+}
+
+
+.divCartaYouTube {
+  position: relative;
+  display: inline-block;
+ 
+}
+
+.divCartaYouTube .cartaYouTubeText {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(142, 75, 180);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.divCartaYouTube .cartaYouTubeText::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #6C3BC5 transparent transparent transparent;
+}
+
+.divCartaYouTube:hover .cartaYouTubeText {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*****************CARTA3 (CARTA PUNTO)***********/
+
+.lomoCarta3{
+  content: url("../img/diamante1.png");
+}
+
+.cartaPunto{
+  content: url("../img/cartapunto.png");
+}
+
+
+.divCartaPunto {
+  position: relative;
+  display: inline-block;
+ 
+}
+
+.divCartaPunto .cartaPuntoText {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(142, 75, 180);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.divCartaPunto .cartaPuntoText::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #6C3BC5 transparent transparent transparent;
+}
+
+.divCartaPunto:hover .cartaPuntoText {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*****************CARTA4 (CARTA GAME)***********/
+
+.lomoCarta4{
+  content: url("../img/diamante1.png");
+}
+
+.cartaGame{
+  content: url("../img/cartagame.png");
+}
+
+
+.divCartaGame {
+  position: relative;
+  display: inline-block;
+ 
+}
+
+.divCartaGame .cartaGameText {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(142, 75, 180);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.divCartaGame .cartaGameText::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #6C3BC5 transparent transparent transparent;
+}
+
+.divCartaGame:hover .cartaGameText {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media(max-width:720px){
+  .cartas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+  }
+}
+
+
+/****************************FOOTER**********************/
+footer{
+  background: url("../img/footer.png");
+}
+
+.textofooter{
+  font-size: 2em;
+  font-family: 'Press Start 2P', cursive;
+  color: cornsilk;
+  padding: 1em;
+  -webkit-text-stroke: 2px black;
+
+}
+.enlaceagithub a img{
+  max-width: 10em;
+  margin-left: 20em;
+}
+
+
+
+.contactofooter{
+  font-size: 2em;
+  font-family: 'Press Start 2P', cursive;
+  color: cornsilk;
+  padding: 1em;
+  -webkit-text-stroke: 2px black;
+  text-decoration: none;
+
+
+}
+.contactofooter:hover{
+  color: mediumslateblue;
+
+}
+
+@media(max-width:720px){
+  
+   .enlaceagithub a img{
+     margin-left: 2em;
+   }
+  
+}
+
+
+
+/***********************************************************************************************************************
+************************************************************************************************************************************************/
+                                                          /**********FORM.HTML************************/
+.containercontacto{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3em;
+}
+.githubfootercontacto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
